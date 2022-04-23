@@ -1,4 +1,4 @@
-console.log("hot here 2")
+// Detect System Colour scheme
 function detectColorScheme(){
     var theme="light";    //default to light
 
@@ -21,5 +21,14 @@ function detectColorScheme(){
          console.log("Got here")
     }
 }
-console.log("Got here 1")
 detectColorScheme();
+
+// Get value from IP box upon submission
+$('form').submit(function(evt){
+    evt.preventDefault(); /* Prevent page from refreshing */
+    error = false;
+
+    var ip = $('[name="ip"]').val();
+    console.log(ip)
+    // pass ip to Axiom/Backend
+})
