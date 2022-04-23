@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+
+// Update Bulma's global variables
+$grey-darker: white;
+$grey-dark: white;
+$grey-light: grey;
+$primary: #F96BAB; 
+$link: #0297AB;
+$input-placeholder-color: $grey-light;
+
+// Update some of Bulma's component variables
+$body-background-color: #001B1F;
+$body-color: white;
+
+img{
+    filter: invert(0);
+}
+
+// Import Bulma
+@import "../node_modules/bulma/bulma.sass";
